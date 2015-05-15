@@ -1,0 +1,89 @@
+/* импорт файлов */
+@import "__mixins.css";
+
+
+/* переменные */
+$width: 200px;
+
+
+/* использование перпеменных */
+.container{
+  box-sizing: border-box;
+  width: $width;
+}
+
+
+/* циклы */
+@for $in from 1 to 3 {
+  .b-$in { width: $in; }
+}
+
+
+/* вложенности */
+.post{
+
+  .blog{
+    font-weight: 400;
+  }
+
+  &__blog{
+    font-weight: 400;
+  }
+}
+
+
+/* условия */
+.foo {
+  @if 3 < 5 {
+    background: green;
+  }
+  @else {
+    background: blue;
+  }
+}
+
+
+/* определение миксина */
+@define-mixin icon $network, $color: blue {
+    .icon.is-$(network) {
+        color: $color;
+        @mixin-content;
+        backgroun-position: 100%;
+    }
+    .icon.is-$(network):hover {
+        color: white;
+        background: $color;
+    }
+}
+
+
+/* применение миксинов */
+@mixin icon twitter {
+    background: url(twt.png);
+}
+@mixin icon youtube, red {
+    background: url(youtube.png);
+}
+
+
+/* съедающиеся селекторы */
+.test{
+  font-size: 14px;
+}
+
+.test{
+  line-height: 24px;
+}
+
+.boo{
+  font-size: 55px;
+}
+
+.far{
+  font-size: 55px;
+}
+
+/* управление размерами через одну строку */
+.block{
+  size: 20px 40px;
+}

@@ -30,7 +30,7 @@ input::-moz-placeholde{
 
 }
 
-input[type="checkbox"],
+/*input[type="checkbox"],
 input[type="radio"]{
   display: none;
   margin: 20px;
@@ -65,4 +65,4 @@ input[type="checkbox"]:checked + label::before {
 
 input[type="radio"]:checked + label::before {
   background: url("../img/") no-repeat;
-}
+}*/
