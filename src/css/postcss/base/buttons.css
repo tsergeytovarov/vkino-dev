@@ -20,11 +20,21 @@
 
   }
 
-  &__modify{
+  &--search{
+    font-size: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 27px;
+    height: 27px;
+    margin-top: 5px;
+    background-image: url("../img/ico-find.png");
+    background-repeat: no-repeat;
+    background-position: center;
 
     &:hover,
     &--hover{
-
+      opacity: .7;
     }
 
     &:active,

@@ -9,9 +9,62 @@
   -->
   <meta charset="utf-8">
   <title>Заголовок</title>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+
+  <!-- страница фильма -->
+  <div class="page-film container">
+
+
+    <!-- слайдер -->
+    <div class="slider"></div>
+
+
+    <!-- верхняя навигация и форма поиска -->
+    <header class="page-header row">
+
+      <!-- nagigation -->
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Фильмы</a>
+            <!-- submenu -->
+            <ul class="navigation__submenu">
+              <li class="navigation__item navigation__item--submenu"><a href="#" class="navigation__link navigation__link--submenu">Все фильмы</a></li>
+              <li class="navigation__item navigation__item--submenu"><a href="#" class="navigation__link navigation__link--submenu">Боевики(2238)</a></li>
+              <li class="navigation__item navigation__item--submenu"><a href="#" class="navigation__link navigation__link--submenu">Вестерн(101)</a></li>
+              <li class="navigation__item navigation__item--submenu"><a href="#" class="navigation__link navigation__link--submenu">Военный(296)</a></li>
+            </ul>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Сериалы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Мультфильмы</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Топ</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link navigation__link--blue">Наши подписки</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- form -->
+      <div class="search-form">
+        <form action="" method="">
+          <input type="text" placeholder="Что ищем?" required>
+          <button type="submit" class="btn btn--search"></button>
+        </form>
+      </div>
+    </header>
+
+  </div>
+
 
 </body>
 </html>

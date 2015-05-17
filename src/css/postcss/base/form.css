@@ -4,11 +4,14 @@ select,
 input[type='password']{ /* поля */
   box-sizing: border-box;
   outline: none;
-  width: 100%;
-  font-size: 18px;
+  width: 220px;
+  font-size: 16px;
   line-height: 20px;
-  font-family: 'Gotham', sans-serif;
-
+  padding: 3px 10px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  border: 1px solid #a0a0a0;
+  border-radius: 5px;
+  margin-top: 5px;
   &:focus{
 
   }

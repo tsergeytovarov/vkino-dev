@@ -1,1 +1,9 @@
-body{}
+.page-film{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.slider{
+  height: 270px;
+  margin-bottom: 20px;
+}
