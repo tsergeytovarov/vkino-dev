@@ -1,5 +1,7 @@
-.film-row{
+.section-row{
   font-size: 0;
+  margin-bottom: 70px;
+
   &__title{
     font-size: 30px;
     line-height: 2;
@@ -168,4 +170,61 @@
       background-image: url("../img/ico-rait--active.png");
     }
   }
+}
+
+
+.news-prev{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0 10px 10px 0;
+
+  &:nth-child(2n){
+    margin-left: 0;
+  }
+
+  &__image{
+    position: relative;
+  }
+
+  &__title{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    padding: 12px;
+    background: url("../img/bg-news.png") no-repeat center;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    z-index: 20;
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.75);
+    z-index: 10;
+    visibility: hidden;
+  }
+
+  &:hover{
+    box-shadow: 0 0 0 5px #5bcde1;
+  }
+
+  &:hover::before{
+    visibility: visible;
+  }
+}
+
+
+.feedback{
+  font-size: 20px;
+  height: 400px;
 }

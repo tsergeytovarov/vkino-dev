@@ -1,3 +1,12 @@
+
+
 (function(){
-  console.log("let`s work hard!");
+
+  $(window).load(function(){
+            $(".content").mCustomScrollbar({
+              axis:"x",
+        theme:"3d"
+            });
+        });
+
 })

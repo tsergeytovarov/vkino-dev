@@ -15,12 +15,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-h1,
+body,h1,
 h2,
 h3,
 h4,
@@ -310,23 +305,7 @@ body{
   color: #242424;
 }
 
-h1{
-
-}
-
-h2{
-
-}
-
-h3{
-
-}
-
-h4{
-
-}
-
-p,
+h1,h2,h3,h4,p,
 li,
 span{
 
@@ -337,15 +316,7 @@ b{
   font-weight: 600;
 }
 
-a:hover{
-
-}
-
-ul li{
-
-}
-
-table td{
+a:hover,ul li,table td{
 
 } /* половина отступа между колонками */
 
@@ -362,11 +333,7 @@ table td{
   float: none;
 }
 
-.row__inline>.col:first-child{
-  padding: 0 10px;
-}
-
-.row__inline>.col:last-child{
+.row__inline>.col:first-child,.row__inline>.col:last-child{
   padding: 0 10px;
 }
 
@@ -476,10 +443,7 @@ table td{
           border-radius: 5px;
   font-weight: 300;
 }
-.btn:hover, .btn--hover{
-
-}
-.btn:active, .btn__active{
+.btn:hover, .btn--hover,.btn:active, .btn__active{
 
 }
 .btn--search{
@@ -521,12 +485,11 @@ input[type='text']:focus, textarea:focus, select:focus, input[type='password']:f
 
 }
 
-label{
+label,button {
   cursor: pointer;
 }
 
 button{
-  cursor: pointer;
   outline: none;
 }
 
@@ -663,10 +626,11 @@ table{}
   margin-right: 20px;
 }
 .main-footer{}
-.film-row{
+.section-row{
   font-size: 0;
+  margin-bottom: 70px;
 }
-.film-row__title{
+.section-row__title{
   font-size: 30px;
   line-height: 2;
   color: #656464;
@@ -800,24 +764,73 @@ table{}
   margin-right: 0;
 }
 
-.rate--1 i:nth-child(1){
+.rate--1 i:nth-child(1),.rate--2 i:nth-child(1), .rate--2 i:nth-child(2),.rate--3 i:nth-child(1), .rate--3 i:nth-child(2), .rate--3 i:nth-child(3),.rate--4 i:nth-child(1), .rate--4 i:nth-child(2), .rate--4 i:nth-child(3), .rate--4 i:nth-child(4),.rate--5 i{
   background-image: url("../img/ico-rait--active.png");
 }
 
-.rate--2 i:nth-child(1), .rate--2 i:nth-child(2){
-  background-image: url("../img/ico-rait--active.png");
+
+.news-prev{
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0 10px 10px 0;
 }
 
-.rate--3 i:nth-child(1), .rate--3 i:nth-child(2), .rate--3 i:nth-child(3){
-  background-image: url("../img/ico-rait--active.png");
+
+.news-prev:nth-child(2n){
+  margin-left: 0;
 }
 
-.rate--4 i:nth-child(1), .rate--4 i:nth-child(2), .rate--4 i:nth-child(3), .rate--4 i:nth-child(4){
-  background-image: url("../img/ico-rait--active.png");
+
+.news-prev__image{
+  position: relative;
 }
 
-.rate--5 i{
-  background-image: url("../img/ico-rait--active.png");
+
+.news-prev__title{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px;
+  background: url("../img/bg-news.png") no-repeat center;
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
+  z-index: 20;
+}
+
+
+.news-prev::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.75);
+  z-index: 10;
+  visibility: hidden;
+}
+
+
+.news-prev:hover{
+  -webkit-box-shadow: 0 0 0 5px #5bcde1;
+          box-shadow: 0 0 0 5px #5bcde1;
+}
+
+
+.news-prev:hover::before{
+  visibility: visible;
+}
+
+
+.feedback{
+  font-size: 20px;
+  height: 400px;
 }
 
 /* контекст */

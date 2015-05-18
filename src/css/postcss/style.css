@@ -14,6 +14,7 @@
 @import "foundation/mixins.css";
 
 /* база */
+@import "base/scrollbar.css";
 @import "base/font.css";
 @import "base/grid.css";
 @import "base/buttons.css";
