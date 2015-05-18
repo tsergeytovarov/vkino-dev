@@ -3,10 +3,10 @@
   margin-bottom: 70px;
 
   &__title{
-    font-size: 30px;
+    font-size: 25px;
     line-height: 2;
     color: #656464;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 20px;
     background: url("../img/line.png") no-repeat bottom left;
   }
@@ -228,12 +228,23 @@
   height: 340px;
 }
 
+.messages{
+  height: 300px;
+  margin-bottom: 20px;
+}
+
 .fedback-prev{
   display: block;
   text-decoration: none;
   font-size: 14px;
   color: #242424;
   margin-bottom: 10px;
+
+  &--group{
+    .fedback-prev__title{
+      display: block;
+    }
+  }
 
   &:hover &__title{
     color: #5bcde1;
@@ -269,4 +280,56 @@
     color: #242424;
     margin: 15px 0;
   }
+}
+
+.user{
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  width: 100px;
+  text-decoration: none;
+
+  &__image{
+    height: 100px;
+    overflow: hidden;
+    margin-bottom: 5px;
+
+    img{
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: -1;
+    }
+  }
+
+  &__name{
+    font-size: 14px;
+    line-height: 2;
+    color: #313131;
+    text-decoration: none;
+
+    &--online::after{
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 6px;
+      height: 6px;
+      background: #57c9dd;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+  }
+
+  &:hover .user__name{
+    color: #57c9dd;
+    text-decoration: underline;
+  }
+
+  &:hover .user__image{
+    box-shadow: inset 0 0 0 5px #5bcde1;
+  }
+}
+
+.banner{
+  width: 100%;
 }

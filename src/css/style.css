@@ -716,19 +716,18 @@ yx-axis
   -ms-filter: "alpha(opacity=90)";
       filter: "alpha(opacity=90)";
 }
-/*@font-face {
-  font-family: 'Gotham';
-  src:  url('../font/GothamPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/GothamPro-Medium.otf') format('opentype'),
-        url('../font/GothamPro-Medium.woff') format('woff'),
-        url('../font/GothamPro-Medium.ttf') format('truetype'),
-        url('../font/GothamPro-Medium.svg#font/GothamPro-Medium') format('svg');
+@font-face {
+  font-family: 'pfd';
+  src:  url('../font/pfdindisplaypro-reg-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../font/pfdindisplaypro-reg-webfont.woff') format('woff'),
+        url('../font/pfdindisplaypro-reg-webfont.ttf') format('truetype'),
+        url('../font/pfdindisplaypro-reg-webfont.svg#font/pfdindisplaypro-reg-webfont') format('svg');
   font-weight: normal;
   font-style: normal;
-}*/
+}
 
 body{
-  font-family: 'Open Sans', 'Arial', sans-serif;
+  font-family: 'pfd', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 2;
   color: #242424;
@@ -1092,10 +1091,10 @@ table{}
   margin-bottom: 70px;
 }
 .section-row__title{
-  font-size: 30px;
+  font-size: 25px;
   line-height: 2;
   color: #656464;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 20px;
   background: url("../img/line.png") no-repeat bottom left;
 }
@@ -1309,12 +1308,21 @@ table{}
   height: 340px;
 }
 
+.messages{
+  height: 300px;
+  margin-bottom: 20px;
+}
+
 .fedback-prev{
   display: block;
   text-decoration: none;
   font-size: 14px;
   color: #242424;
   margin-bottom: 10px;
+}
+
+.fedback-prev--group .fedback-prev__title{
+  display: block;
 }
 
 .fedback-prev:hover .fedback-prev__title{
@@ -1351,6 +1359,60 @@ table{}
   line-height: 19px;
   color: #242424;
   margin: 15px 0;
+}
+
+.user{
+  display: inline-block;
+  vertical-align: top;
+  margin: 5px;
+  width: 100px;
+  text-decoration: none;
+}
+
+.user__image{
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.user__image img{
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+
+.user__name{
+  font-size: 14px;
+  line-height: 2;
+  color: #313131;
+  text-decoration: none;
+}
+
+.user__name--online::after{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 6px;
+  height: 6px;
+  background: #57c9dd;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  margin-left: 10px;
+}
+
+.user:hover .user__name{
+  color: #57c9dd;
+  text-decoration: underline;
+}
+
+.user:hover .user__image{
+  -webkit-box-shadow: inset 0 0 0 5px #5bcde1;
+          box-shadow: inset 0 0 0 5px #5bcde1;
+}
+
+.banner{
+  width: 100%;
 }
 
 /* контекст */
