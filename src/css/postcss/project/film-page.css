@@ -225,6 +225,48 @@
 
 
 .feedback{
-  font-size: 20px;
-  height: 400px;
+  height: 340px;
+}
+
+.fedback-prev{
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #242424;
+  margin-bottom: 10px;
+
+  &:hover &__title{
+    color: #5bcde1;
+    text-decoration: underline;
+  }
+
+  &__image{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__author{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    margin-right: 25px;
+    color: #242424;
+  }
+
+  &__title{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+  }
+
+  &__text{
+    font-size: 16px;
+    line-height: 19px;
+    color: #242424;
+    margin: 15px 0;
+  }
 }
