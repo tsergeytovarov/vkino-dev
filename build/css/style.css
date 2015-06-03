@@ -1085,6 +1085,13 @@ input[type="radio"]:checked + label::before {
   color: #55c6db;
 }
 
+
+.film-row {
+  overflow: hidden;
+  height: 320px;
+}
+
+
 .all {
   display: inline-block;
   margin-left: 25px;
@@ -1096,9 +1103,11 @@ input[type="radio"]:checked + label::before {
   line-height: 17px;
 }
 
+
 .all:hover {
   text-decoration: none;
 }
+
 
 .all:active {
   opacity: 0.6;
@@ -1108,6 +1117,7 @@ input[type="radio"]:checked + label::before {
   display: inline-block;
   overflow: hidden;
   margin-right: 15px;
+  margin-bottom: 20px;
   width: 180px;
   -webkit-border-radius: 5px;
           border-radius: 5px;

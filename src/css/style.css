@@ -1105,6 +1105,13 @@ table{}
   color: #55c6db;
 }
 
+
+.film-row{
+  height: 320px;
+  overflow: hidden;
+}
+
+
 .all{
   display: inline-block;
   vertical-align: middle;
@@ -1116,9 +1123,11 @@ table{}
   background: url("../img/ico-arrow--rigth.png") no-repeat center right;
 }
 
+
 .all:hover{
   text-decoration: none;
 }
+
 
 .all:active{
   opacity: .6;
@@ -1131,6 +1140,7 @@ table{}
   margin-right: 15px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
+  margin-bottom: 20px;
   overflow: hidden;
   text-decoration: none;
 }
