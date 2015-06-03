@@ -1002,6 +1002,7 @@ table{}
 .page-film{
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .slider{
@@ -1063,6 +1064,7 @@ table{}
 
 .navigation__link--submenu{
   padding: 0 20px;
+  white-space: nowrap;
 }
 
 .navigation__link--submenu:hover{
@@ -1263,9 +1265,10 @@ table{}
 
 .news-prev{
   display: inline-block;
-  vertical-align: top;
   position: relative;
-  margin: 0 10px 10px 0;
+  margin: 0 2% 10px 0;
+  vertical-align: top;
+  width: 46%;
 }
 
 
@@ -1276,6 +1279,7 @@ table{}
 
 .news-prev__image{
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -1288,6 +1292,7 @@ table{}
           box-sizing: border-box;
   padding: 12px;
   background: url("../img/bg-news.png") no-repeat center;
+  background-size: 100% 100%;
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
@@ -1399,7 +1404,7 @@ table{}
 }
 
 .user__name{
-  font-size: 14px;
+  font-size: 18px;
   line-height: 2;
   color: #313131;
   text-decoration: none;

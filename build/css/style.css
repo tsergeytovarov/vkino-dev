@@ -981,6 +981,7 @@ input[type="radio"]:checked + label::before {
 /* проект */
 .page-film {
   margin: 0 auto;
+  padding: 0 15px;
   max-width: 1400px;
 }
 
@@ -1043,6 +1044,7 @@ input[type="radio"]:checked + label::before {
 
 .navigation__link--submenu {
   padding: 0 20px;
+  white-space: nowrap;
 }
 
 .navigation__link--submenu:hover {
@@ -1250,7 +1252,8 @@ input[type="radio"]:checked + label::before {
 .news-prev {
   position: relative;
   display: inline-block;
-  margin: 0 10px 10px 0;
+  margin: 0 2% 10px 0;
+  width: 46%;
   vertical-align: top;
 }
 
@@ -1262,6 +1265,7 @@ input[type="radio"]:checked + label::before {
 
 .news-prev__image {
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -1275,6 +1279,7 @@ input[type="radio"]:checked + label::before {
   padding: 12px;
   width: 100%;
   background: url("../img/bg-news.png") no-repeat center;
+  background-size: 100% 100%;
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
@@ -1387,7 +1392,7 @@ input[type="radio"]:checked + label::before {
 .user__name {
   color: #313131;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 2;
 }
 
